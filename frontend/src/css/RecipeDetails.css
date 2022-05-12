@@ -17,15 +17,26 @@
 }
 
 .Card-image {
-  border-bottom: solid var(--third) 0.2rem;
+  height: 15rem;
+  border: 0;
+}
+
+.Card-ingredient-title{
+  border-top: solid var(--third) 0.2rem;
+  margin: 0;
+  padding: 1rem;
 }
 
 .Card-ingredient {
   padding: 0 2rem 0 2rem;
-  list-style: circle;
+  list-style: none;
 }
 
 .Card-preparation {
   padding: 0 2rem 0 2rem;
   list-style: circle;
+}
+
+.Card-preparation > li {
+  padding: 0.5rem;
 }

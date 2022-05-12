@@ -19,6 +19,13 @@ const recipe = [
       "Graisser un moule avec de l'huile, y verser la pâte et cuire le gâteau pendant 30-45 minutes, ou jusqu'à ce qu'il soit prêt, en chauffant seulement en dessous.",
       "Quand il est prêt, sortez du four, laissez-le refroidir, démoulez-le et offrez-le à votre chat !",
     ],
+    ingredientsFilter: {
+      fish: true,
+      meat: false,
+      milk: false,
+      weed: true,
+      healthy: false,
+    },
   },
   {
     id: 2,
@@ -42,6 +49,13 @@ const recipe = [
       "Versez la pâte dans un moule graissé d'huile et faites cuire le gâteau pour chat pendant 30-45 minutes, selon la puissance de votre four, avec la chaleur seulement en dessous.",
       "Sortez la préparation du four quand elle est cuite, laissez-la refroidir et vous pouvez la servir à votre chat !",
     ],
+    ingredientsFilter: {
+      fish: false,
+      meat: true,
+      milk: false,
+      weed: true,
+      healthy: false,
+    },
   },
   {
     id: 3,
@@ -54,7 +68,6 @@ const recipe = [
       "Huile d'olive 60 ml",
       "Miel 30gr",
       "Bicarbonate de soude 15gr",
-      "Herbe a chat 15gr",
     ],
     steps: [
       "Dans un bol ou un saladier, battez l'œuf avec l'huile et le miel. Préchauffez le four à 180 ºC en chauffant de haut en bas.",
@@ -65,6 +78,13 @@ const recipe = [
       "Versez la pâte dans un moule graissé d'huile et faites cuire le gâteau pendant 30-45 minutes, en chauffant seulement en dessous.",
       "Laisser refroidir et servir.",
     ],
+    ingredientsFilter: {
+      fish: true,
+      meat: false,
+      milk: false,
+      weed: false,
+      healthy: true,
+    },
   },
   {
     id: 4,
@@ -85,6 +105,13 @@ const recipe = [
       "Graisser un moule avec de l'huile, y verser la pâte et cuire le gâteau pendant 30-45 minutes, ou jusqu'à ce qu'il soit prêt, en chauffant seulement en dessous.",
       "Quand il est prêt, sortez du four, laissez-le refroidir, démoulez-le et offrez-le à votre chat !",
     ],
+    ingredientsFilter: {
+      fish: false,
+      meat: true,
+      milk: true,
+      weed: true,
+      healthy: true,
+    },
   },
   {
     id: 5,
@@ -103,6 +130,13 @@ const recipe = [
       "Ajouter un peu d'huile",
       "Maintenant, ajoutez l'herbe à chat et continuez à battre. Ce produit, en plus d'apporter tous ses bienfaits (comme l'effet calmant), rendra l'animal encore plus désireux de dévorer votre recette",
     ],
+    ingredientsFilter: {
+      fish: true,
+      meat: false,
+      milk: false,
+      weed: true,
+      healthy: false,
+    },
   },
   {
     id: 6,
@@ -120,10 +154,17 @@ const recipe = [
       "Laisser macérer le mélange couvert pendant 10 à 15 minutes avec un film plastique ou autre",
       " Ajoutez ensuite un peu de miel (d'origine naturelle, non traité) et servir à votre chat.",
     ],
+    ingredientsFilter: {
+      fish: false,
+      meat: true,
+      milk: false,
+      weed: true,
+      healthy: false,
+    },
   },
   {
     id: 7,
-    image: "../src/assets/image/pouletriz.webp",
+    image: "../src/assets/image/pouletriz.jpg",
     title: "Recette au Poulet et au riz",
     ingredients: [
       "Riz brun 60gr",
@@ -141,6 +182,13 @@ const recipe = [
       "Maintenant, ajoutez l'herbe à chat et continuez à battre. Ce produit, en plus d'apporter tous ses bienfaits (comme l'effet calmant), rendra l'animal encore plus désireux de dévorer votre recette",
       "Et voilà, la recette pour chat est prête !",
     ],
+    ingredientsFilter: {
+      fish: false,
+      meat: true,
+      milk: false,
+      weed: true,
+      healthy: true,
+    },
   },
   {
     id: 8,
@@ -163,6 +211,13 @@ const recipe = [
       "Maintenant, ajoutez l'herbe à chat et continuez à battre. Ce produit, en plus d'apporter tous ses bienfaits (comme l'effet calmant), rendra l'animal encore plus désireux de dévorer votre recette",
       "A la fin de cette recette de poisson maison, nous pouvons la conserver au congélateur à l'aide d'un tupper ou de sacs en plastique, vous en aurez assez pour plusieurs jours.",
     ],
+    ingredientsFilter: {
+      fish: true,
+      meat: false,
+      milk: false,
+      weed: true,
+      healthy: true,
+    },
   },
 ];
 

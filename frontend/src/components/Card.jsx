@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../css/shophome.css";
 
 function Card({ catnipItems }) {
@@ -13,18 +14,21 @@ function Card({ catnipItems }) {
         <h3>{title}</h3>
       </div>
       <div className="bottomcard">
-        <div className="pcard">
-          <p>{descriptionStore}</p>
-          <p> Avis de nos clients :{"★".repeat(starNumber)} / 5</p>
-        </div>
-
-        <div className="btn-card">
-          <p className="price"> {price} $</p>
-
+        <p>{descriptionStore}</p>
+        <p>
+          {" "}
+          Avis de nos clients :{" "}
+          <span className="star">{"★".repeat(starNumber)} </span>/ 5
+        </p>
+        <p>
+          {" "}
+          À partir de <span className="star"> {price} euros </span>{" "}
+        </p>
+        <Link to="/shop/test">
           <button type="button" className="btnbuy">
-            click
+            Voir le produit
           </button>
-        </div>
+        </Link>
       </div>
     </div>
   );
