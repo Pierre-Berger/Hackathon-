@@ -13,18 +13,19 @@ function Card({ catnipItems }) {
         <h3>{title}</h3>
       </div>
       <div className="bottomcard">
-        <div className="pcard">
-          <p>{descriptionStore}</p>
-          <p> Avis de nos clients :{"★".repeat(starNumber)} / 5</p>
-        </div>
-
-        <div className="btn-card">
-          <p className="price"> {price} $</p>
-
-          <button type="button" className="btnbuy">
-            click
-          </button>
-        </div>
+        <p>{descriptionStore}</p>
+        <p>
+          {" "}
+          Avis de nos clients :{" "}
+          <span className="star">{"★".repeat(starNumber)} </span>/ 5
+        </p>
+        <p>
+          {" "}
+          À partir de <span className="star"> {price} euros </span>{" "}
+        </p>
+        <button type="button" className="btnbuy">
+          Voir le produit
+        </button>
       </div>
     </div>
   );
