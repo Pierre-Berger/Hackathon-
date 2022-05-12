@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import RecipeDetails from "./pages/RecipeDetails";
 import "./css/App.css";
+import RecipeDetails from "./pages/RecipeDetails";
 import Navbar from "./components/Navbar";
 import CatnipItem from "./pages/CatnipItem";
 
