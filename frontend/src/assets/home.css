@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+:root {
+  --primary: #065143;
+  --secondary: #70b77e;
+  --third: #ff934f;
+  --white: white;
+  --font: "Quicksand";
+}
+
+.container {
+  background-color: var(--third);
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: space-evenly;
+}
+.gifcontainer {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.gif {
+  width: 100%;
+  height: 80%;
+}
+.linkcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.btn-link {
+  font-family: var(--font);
+  height: 40px;
+  width: 180px;
+  border-radius: 50px;
+  border: 0;
+  color: #f36812;
+  font-size: 1.5rem;
+  background-color: antiquewhite;
+}
+.croixtitle {
+  height: 80px;
+}
+.title {
+  display: flex;
+  align-items: center;
+  font-family: var(--font);
+}
