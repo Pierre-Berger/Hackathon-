@@ -1,6 +1,6 @@
 const catnipItems = [
   {
-    id: 1,
+    id: 0,
     title: "Catnip Claws",
     image: "../src/assets/images/catnip-1.jpg",
     descriptionStore: "Une herbe qui va chatouiller !",
@@ -14,7 +14,7 @@ const catnipItems = [
     starNumber: 3,
   },
   {
-    id: 2,
+    id: 1,
     title: "Frisco Natural Catnip",
     image: "../src/assets/images/catnip-2.jpg",
     descriptionStore: "Chaperlipopette ! Une herbe qui fouette !",
@@ -27,7 +27,7 @@ const catnipItems = [
     starNumber: 4,
   },
   {
-    id: 3,
+    id: 2,
     title: "Yeowww Catnip",
     image: "../src/assets/images/catnip-3.jpg",
     descriptionStore: "Ca donnerait envie d'être un chat !",
@@ -40,7 +40,7 @@ const catnipItems = [
     starNumber: 4,
   },
   {
-    id: 4,
+    id: 3,
     title: "Punky Kat",
     image: "../src/assets/images/catnip-4.jpg",
     descriptionStore: "Soutenez les félins et choyez le vôtre !",
@@ -52,7 +52,7 @@ const catnipItems = [
     starNumber: 4,
   },
   {
-    id: 5,
+    id: 4,
     title: "Meowijuana",
     image: "../src/assets/images/catnip-5.jpg",
     descriptionStore: "Ramenez la Jamaïque à la maison",
@@ -65,7 +65,7 @@ const catnipItems = [
     starNumber: 5,
   },
   {
-    id: 6,
+    id: 5,
     title: "Just Catnip",
     image: "../src/assets/images/catnip-6.jpg",
     descriptionStore: "Ceci n'est pas de l'herbe à chat !",
