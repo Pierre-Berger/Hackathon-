@@ -50,7 +50,6 @@
 }
 .arrow {
   height: 80px;
-  
 }
 .btnbuy {
   border-radius: 25px;
@@ -106,7 +105,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  gap: 10px;
+  gap: 20px;
 }
 .hr {
   width: 60vw;
@@ -118,12 +117,27 @@
 .drapeau {
   font-size: 5rem;
 }
-.engagement1 {
+.engagement {
   width: 80vw;
+  font-size: 1.5rem;
 }
-.engagement2 {
-  width: 80vw;
-}
+
 .title-engagement {
   font-size: 2.5rem;
+}
+.gifelon {
+  height: 100px;
+}
+.title-card {
+  font-size: 2.5rem;
+  color: white;
+  font-family: var(--font);
+}
+.spangreen {
+  color: var(--primary);
+}
+.product-title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
