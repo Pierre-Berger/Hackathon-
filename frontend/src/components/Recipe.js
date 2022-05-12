@@ -22,7 +22,7 @@ const recipe = [
   },
   {
     id: 2,
-    image: "../src/assets/image/viande.jpeg",
+    image: "../src/assets/image/viande.jpg",
     title: "Recette a la viande",
     ingredients: [
       "Farine 200gr",
@@ -45,7 +45,7 @@ const recipe = [
   },
   {
     id: 3,
-    image: "../src/assets/image/softvegetarienne.jpeg",
+    image: "../src/assets/image/softvegetarienne.jpg",
     title: "Recette soft vegetarienne",
     ingredients: [
       "Farine 100gr",
