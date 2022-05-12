@@ -18,6 +18,7 @@ function ShopHome() {
           <h1 className="videop">
             Premiere boutique d&#39;herbe a chat de France &#127467;&#127479;
           </h1>
+          <img className="arrow" src="../src/assets/arrow.gif" alt="arrow" />
         </div>
       </div>
       <div className="containercard">
