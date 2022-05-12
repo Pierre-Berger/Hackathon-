@@ -9,10 +9,12 @@ export default function CatnipItem() {
   const { id } = useParams();
   const [cart, updateCart] = useState(0);
   const [idItem, setidItem] = useState(id);
+
   const handleClick = () => {
     updateCart(cart + 1);
     setidItem(catnipItems[parseInt(id, 10)]);
   };
+
   return (
     <div>
       <Navbar />
