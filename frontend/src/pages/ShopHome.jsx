@@ -16,7 +16,7 @@ function ShopHome() {
         <div className="video-title-container">
           <h1 className="videotitle">Chat&#39;Perché </h1>
           <h1 className="videop">
-            Premiere boutique d&#39;herbe a chat de France &#127467;&#127479;
+            Premiere boutique d&#39;herbe à chat de France &#127467;&#127479;
           </h1>
           <div>
             <img className="arrow" src="../src/assets/arrow.gif" alt="arrow" />
@@ -30,14 +30,14 @@ function ShopHome() {
           <img className="medaille" src="../src/assets/medaille.png" alt="" />
           <h3>
             Des <span className="spangreen"> herbes </span>de qualité,
-            developper avec{" "}
+            developpées avec{" "}
             <span className="spangreen"> des acteurs locaux</span>
           </h3>
         </div>
         <div className="engagement">
           <h1 className="drapeau"> &#127467;&#127479; </h1>
           <h3>
-            Entierement crée en <span className="spangreen">France </span> et{" "}
+            Entièrement créées en <span className="spangreen">France </span> et{" "}
             <span className="spangreen">100% Bio </span>{" "}
           </h3>
         </div>
@@ -50,8 +50,8 @@ function ShopHome() {
           />
           <h3>
             {" "}
-            <span className="spangreen">Tester et Validé </span> par des experts
-            du domaines{" "}
+            <span className="spangreen">Testées et Validées </span> par des
+            experts du domaines{" "}
           </h3>
         </div>
       </div>

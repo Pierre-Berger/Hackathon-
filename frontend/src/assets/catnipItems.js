@@ -8,7 +8,7 @@ const catnipItems = [
       "A peu près 10 doses de feuilles séchèes et de bourgeons (pas d'ajouts d'autres plantes, seulement une herbe à chat pure.",
       "Permet d'attirer votre chat vers son grattoir, remplir ses jouets, fabriquer vos propres jouets, en étaler dans sa boîte et laisser votre chat se rouler dedans. ",
       "A conserver dans un frigo pour préserver son potentiel et son parfum.",
-      "Cultivée aux USA.",
+      "Cultivée en France.",
     ],
     price: 15,
     starNumber: 3,
@@ -21,7 +21,7 @@ const catnipItems = [
     description: [
       "Parfum 100% naturel de haute qualité, feuilles aromatiques et bourgeons pour le plaisir de vos chats. Elevée pour un potentiel optimal, une couleur riche et un arôme irrésistible pour votre chat.",
       "Libère les tensions de votre chat, efface son ennui en lui permettant de planer pendant des heures.",
-      " Cultivée en Amérique du Nord sans pesticides, produits chimiques ou engrais.",
+      " Cultivée dans le Sud de la France sans pesticides, produits chimiques ou engrais.",
     ],
     price: 6.59,
     starNumber: 4,
@@ -59,7 +59,7 @@ const catnipItems = [
     description: [
       "Notre herbe à chat 100% bio est fabriquée à partir des bourgeons les plus purs et plus parfumés. C'est rééllement la plus pure des Meowijuanas que vous pouvez trouver sur le marché",
       "Toutes nos herbes à chats sont récoltées lors du pic de production d'huile de la plante. Cela permet de donner à votre chat l'expérience la plus psychédélique qu'il puisse vivre.",
-      "A réserver aux chat de plus d'un an !",
+      "A réserver aux chats de plus d'un an !",
     ],
     price: 25,
     starNumber: 5,
@@ -71,7 +71,7 @@ const catnipItems = [
     descriptionStore: "Ceci n'est pas de l'herbe à chat !",
     description: [
       "Donnez à votre ami à poils la friandise parfaite pour qu'il soit relaxé et qu'il ronronne dans la paix la plus parfaite.",
-      "Cultivée dans un souci d'éthique et de développement durable, notre herbe à chat est récoltée à la main par des familles de fermiers dans les plaines de l'Afrique du Sud",
+      "Cultivée dans un souci d'éthique et de développement durable, notre herbe à chat est récoltée à la main par des familles de fermiers dans les vallées de l'Ariège",
       "100% naturelle, nous travaillons dur pour créer des friandises pour chats exclues de tout ajout de produits chimiques.",
     ],
     price: 8,
