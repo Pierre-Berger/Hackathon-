@@ -50,9 +50,7 @@
 }
 .arrow {
   height: 80px;
-  position: absolute;
-  top: 300%;
-  left: 40%;
+  
 }
 .btnbuy {
   border-radius: 25px;
@@ -71,7 +69,7 @@
   background-position: 50% !important;
   width: 100%;
   height: 100vh;
-  z-index: 2;
+
   object-fit: cover;
 }
 .video-title-container {
@@ -100,4 +98,32 @@
 }
 .titlecard {
   font-size: 1.5rem;
+}
+.container-engagement {
+  color: white;
+  font-family: var(--font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+.hr {
+  width: 60vw;
+  border: 1px solid white;
+}
+.medaille {
+  height: 100px;
+}
+.drapeau {
+  font-size: 5rem;
+}
+.engagement1 {
+  width: 80vw;
+}
+.engagement2 {
+  width: 80vw;
+}
+.title-engagement {
+  font-size: 2.5rem;
 }

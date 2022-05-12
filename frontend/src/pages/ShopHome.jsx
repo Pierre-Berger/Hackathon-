@@ -18,12 +18,22 @@ function ShopHome() {
           <h1 className="videop">
             Premiere boutique d&#39;herbe a chat de France &#127467;&#127479;
           </h1>
-          <img className="arrow" src="../src/assets/arrow.gif" alt="arrow" />
+          <div>
+            <img className="arrow" src="../src/assets/arrow.gif" alt="arrow" />
+          </div>
         </div>
       </div>
       <div className="container-engagement">
-        <h2>Nos Engagements </h2>
-        <br />
+        <h2 className="title-engagement">Nos Engagements </h2>
+        <hr className="hr" />
+        <div className="engagement1">
+          <img className="medaille" src="../src/assets/medaille.png" alt="" />
+          <h3>Des herbes de qualité, developper avec des acteurs locaux </h3>
+        </div>
+        <div className="engagement2">
+          <h1 className="drapeau"> &#127467;&#127479; </h1>
+          <h3>Entierement crée en France </h3>
+        </div>
       </div>
       <div className="containercard">
         {catnipItems.map((el) => (

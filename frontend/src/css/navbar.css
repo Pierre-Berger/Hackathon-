@@ -4,7 +4,9 @@
   justify-content: center;
   background-color: var(--secondary);
   height: 3rem;
-  box-shadow:0 0 5px black ;
+  box-shadow: 0 0 5px black;
+  position: fixed;
+  width: 100vw;
 }
 .cat-logo {
   position: relative;
@@ -14,7 +16,7 @@
   top: 5%;
 }
 .link-cont {
-  font:bolder var(--font) ;
+  font: bolder var(--font);
   color: var(--third);
   width: 35vh;
   -webkit-text-stroke: 1px rgba(22, 21, 21, 0);
@@ -29,8 +31,8 @@
   align-self: flex-start;
   box-shadow: 0 0 5px black;
 }
-.link-nav{
-  text-decoration:none;
+.link-nav {
+  text-decoration: none;
   color: var(--font);
   -webkit-text-stroke: 1px rgba(22, 21, 21, 0);
   font-weight: 900;
