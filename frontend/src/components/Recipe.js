@@ -1,7 +1,7 @@
 const recipe = [
   {
     id: 1,
-    image: "../assets/image/thon.jpeg",
+    image: "../src/assets/image/thon.jpeg",
     title: "Recette au thon",
     ingredients: [
       "Farine 200gr",
@@ -22,7 +22,7 @@ const recipe = [
   },
   {
     id: 2,
-    image: "",
+    image: "../src/assets/image/viande.jpeg",
     title: "Recette a la viande",
     ingredients: [
       "Farine 200gr",
@@ -45,7 +45,7 @@ const recipe = [
   },
   {
     id: 3,
-    image: "",
+    image: "../src/assets/image/softvegetarienne.jpeg",
     title: "Recette soft vegetarienne",
     ingredients: [
       "Farine 100gr",
@@ -68,7 +68,7 @@ const recipe = [
   },
   {
     id: 4,
-    image: "",
+    image: "../src/assets/image/agneauyaourt.webp",
     title: "Recette agneau et yaourt",
     ingredients: [
       "Viande d'agneau 100gr",
@@ -88,7 +88,7 @@ const recipe = [
   },
   {
     id: 5,
-    image: "",
+    image: "../src/assets/image/crustacés.webp",
     title: "Recette au crustacés",
     ingredients: [
       "Crevette 50gr",
@@ -106,7 +106,7 @@ const recipe = [
   },
   {
     id: 6,
-    image: "",
+    image: "../src/assets/image/porc.webp",
     title: "Recette au porc",
     ingredients: [
       "Porc 100gr",
@@ -123,7 +123,7 @@ const recipe = [
   },
   {
     id: 7,
-    image: "",
+    image: "../src/assets/image/pouletriz.webp",
     title: "Recette au Poulet et au riz",
     ingredients: [
       "Riz brun 60gr",
@@ -144,7 +144,7 @@ const recipe = [
   },
   {
     id: 8,
-    image: "",
+    image: "../src/assets/image/courgepoisson.jpeg",
     title: "Recette a la courge et au poisson",
     ingredients: [
       "Poisson 500gr",
