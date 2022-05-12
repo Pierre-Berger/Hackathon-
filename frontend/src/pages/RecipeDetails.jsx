@@ -5,6 +5,7 @@ function RecipeDetails() {
   return (
     <div>
       <h1>!{Recipe[0].title}!</h1>
+      <img src={Recipe[0].image} alt="" />
       <h3>Ingrédients</h3>
       <ul>
         {Recipe[0].ingredients.map((el) => (
