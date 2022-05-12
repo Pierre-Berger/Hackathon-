@@ -1,5 +1,4 @@
-.catnipItem-article{
-  
+.catnipItem-article{  
   --primary: #065143;
   --secondary: #70b77e;
   --third: #ff934f;
@@ -12,7 +11,8 @@
   padding: 1rem;
 }
 .catnipItem-title{
-  padding: 1rem;
+  padding: 2rem;
+  padding-top: 4rem;
 }
 .catnipItem-image{
   width: auto;
