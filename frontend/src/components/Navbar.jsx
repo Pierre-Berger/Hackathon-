@@ -6,12 +6,12 @@ export default function Navbar() {
   return (
     <div className="navbar-cont">
       <div className="link-cont">
-        <Link to="/" className="link-nav">
+        <Link to="/shop" className="link-nav">
           {`CHAT'PERCHÉ`}
         </Link>
       </div>
       <div className="logo-cont">
-        <Link to="/">
+        <Link to="/recipes">
           <img
             src="../src/assets/Logo-marmithon-orangesvg.svg"
             alt="Logo de chat"
@@ -20,7 +20,7 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="link-cont">
-        <Link to="/" className="link-nav">
+        <Link to="/recipes" className="link-nav">
           MARMITHON
         </Link>
       </div>

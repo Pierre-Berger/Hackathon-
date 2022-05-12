@@ -13,7 +13,6 @@ export default function CatnipItem() {
     updateCart(cart + 1);
     setidItem(catnipItems[parseInt(id, 10)]);
   };
-  console.log(idItem.id);
   return (
     <div>
       <Navbar />
