@@ -20,7 +20,7 @@ function RecipeDetails() {
           <li>{el}</li>
         ))}
       </ul>
-      <div>
+      <div className="comment-tile">
         <Comment />
       </div>
     </div>
