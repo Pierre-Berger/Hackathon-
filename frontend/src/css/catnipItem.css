@@ -17,6 +17,7 @@
 .catnipItem-image{
   width: auto;
   height: 40vh;
+  border-radius: 15px;
 }
 
 .catnipItem-description ul{
@@ -42,8 +43,7 @@
   padding: 0.5rem;
   color: white;
   background-color: #065143;
-  box-shadow:#70b77e ;
   border-style: none;
-  box-shadow: 1px 1px 15px#ff934f;
+  box-shadow: 1px 1px 15px #70b77e;
 }
 
