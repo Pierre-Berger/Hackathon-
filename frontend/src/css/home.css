@@ -5,6 +5,7 @@
   --third: #ff934f;
   --white: white;
   --font: "Quicksand";
+  background-color:var(--third) ;
 }
 
 .container {

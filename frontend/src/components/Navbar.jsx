@@ -20,7 +20,7 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="link-cont">
-        <Link to="/" className="link-nav">
+        <Link to="/Recipes" className="link-nav">
           BOUFFE POUR CLEBS
         </Link>
       </div>
