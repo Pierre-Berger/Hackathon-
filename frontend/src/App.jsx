@@ -1,17 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import "./App.css";
-import RecipeDetails from "./pages/RecipeDetails";
 import "./css/App.css";
+import RecipeDetails from "./pages/RecipeDetails";
 import Navbar from "./components/Navbar";
 import CatnipItem from "./pages/CatnipItem";
-
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
       <BrowserRouter>
         <Routes>
           <Route path="/shop/test" element={<CatnipItem />} />
