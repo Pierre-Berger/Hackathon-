@@ -19,6 +19,7 @@
     "husky": "^7.0.0"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "nodemon": "^2.0.16",
     "react-router-dom": "^6.3.0"
   }
