@@ -20,7 +20,9 @@ function Card() {
 
         <div className="btn-card">
           <p> 60$</p>
-          <button type="button"> click</button>
+          <button type="button" className="btnbuy">
+            click
+          </button>
         </div>
       </div>
     </div>
