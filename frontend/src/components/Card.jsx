@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../css/shophome.css";
 
 function Card({ catnipItems }) {
@@ -23,9 +24,11 @@ function Card({ catnipItems }) {
           {" "}
           À partir de <span className="star"> {price} euros </span>{" "}
         </p>
-        <button type="button" className="btnbuy">
-          Voir le produit
-        </button>
+        <Link to="/shop/test">
+          <button type="button" className="btnbuy">
+            Voir le produit
+          </button>
+        </Link>
       </div>
     </div>
   );
