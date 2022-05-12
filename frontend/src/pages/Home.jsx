@@ -1,4 +1,5 @@
 import "../assets/home.css";
+import { Link } from "react-router-dom";
 import gif1 from "../assets/gif1.gif";
 import croix from "../assets/croix.png";
 
@@ -20,9 +21,11 @@ export default function Home() {
           </button>
         </div>
         <div className="btn-shop">
-          <button className="btn-link" type="button">
-            Chat&#39;Perché
-          </button>
+          <Link to="/shop">
+            <button className="btn-link" type="button">
+              Chat&#39;Perché
+            </button>
+          </Link>
         </div>
       </div>
     </div>
