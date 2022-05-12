@@ -2,6 +2,8 @@ import catnipItems from "../assets/catnipItems";
 import "../css/catnipItem.css";
 
 export default function CatnipItem() {
+  const handleClick = () => {};
+
   return (
     <div>
       <div className="catnipItem-article">
@@ -24,7 +26,11 @@ export default function CatnipItem() {
           </div>
           <div className="catnipItem-price">{catnipItems[3].price} €</div>
         </div>
-        <button className="catnipItem-button" type="button">
+        <button
+          className="catnipItem-button"
+          type="button"
+          onClick={handleClick}
+        >
           Ajouter au panier
         </button>
       </div>
