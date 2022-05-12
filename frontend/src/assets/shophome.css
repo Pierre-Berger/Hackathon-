@@ -3,11 +3,11 @@
   width: auto;
   display: flex;
   flex-direction: column;
-  
 }
-.containercard{
-  display:flex;
-  
+.containercard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .card {
   border: 1px solid red;
