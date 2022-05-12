@@ -1,0 +1,47 @@
+.catnipItem-article{
+  
+  --primary: #065143;
+  --secondary: #70b77e;
+  --third: #ff934f;
+  --white: white;
+  --font: "Quicksand";
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font);
+  align-items: center;
+  padding: 1rem;
+}
+
+.catnipItem-image{
+  width: auto;
+  height: 40vh;
+}
+
+.catnipItem-description ul{
+  list-style: none;
+  padding: 0 ;
+}
+
+.catnipItem-description li{
+  padding: 0.5rem;
+}
+
+.catnipItem-information{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size:x-large;
+}
+
+.catnipItem-button{
+  font-family: var(--font);
+  margin: 2rem;
+  border-radius: 15px;
+  padding: 0.5rem;
+  color: white;
+  background-color: #065143;
+  box-shadow:#70b77e ;
+  border-style: none;
+  box-shadow: 1px 1px 15px#ff934f;
+}
+
