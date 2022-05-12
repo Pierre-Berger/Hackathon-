@@ -29,7 +29,7 @@ function Recipes() {
               <RecipeCard recipe={r} />
             ))}
           </div>
-          <h3 className="recipe-slider-title"> Recettes contenant du lait </h3>
+          <h3 className="recipe-slider-title"> Recettes contenant du lait !</h3>
           <div className="recipes-slider">
             {milk.map((r) => (
               <RecipeCard recipe={r} />
@@ -37,14 +37,14 @@ function Recipes() {
           </div>
           <h3 className="recipe-slider-title">
             {" "}
-            Recettes contenant de l&apos;herbe a chat{" "}
+            Recettes contenant de l&apos;herbe a chat !{" "}
           </h3>
           <div className="recipes-slider">
             {weed.map((r) => (
               <RecipeCard recipe={r} />
             ))}
           </div>
-          <h3 className="recipe-slider-title"> Recettes healthy </h3>
+          <h3 className="recipe-slider-title"> Recettes healthy !</h3>
           <div className="recipes-slider">
             {healthy.map((r) => (
               <RecipeCard recipe={r} />

@@ -16,9 +16,11 @@ export default function Home() {
       </div>
       <div className="linkcontainer">
         <div className="btn-marmithon">
-          <button className="btn-link" type="button">
-            Marmithon
-          </button>
+          <Link to="/recipes">
+            <button className="btn-link" type="button">
+              Marmithon
+            </button>
+          </Link>
         </div>
         <div className="btn-shop">
           <Link to="/shop">
