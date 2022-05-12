@@ -1,0 +1,31 @@
+.Card-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem 1rem 1rem;
+  border: solid var(--third);
+  border-radius: 1rem;
+}
+
+.Card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--third);
+  margin: 0;
+  border-radius: 0.5rem 0.5rem 0 0;
+  height: 4rem;
+}
+
+.Card-image {
+  border-bottom: solid var(--third) 0.2rem;
+}
+
+.Card-ingredient {
+  padding: 0 2rem 0 2rem;
+  list-style: circle;
+}
+
+.Card-preparation {
+  padding: 0 2rem 0 2rem;
+  list-style: circle;
+}
