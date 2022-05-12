@@ -27,17 +27,19 @@ code {
 }
 
 *::-webkit-scrollbar {
-  width: 16px;
+  width:0;
+  height: 5px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #ffffff;
+  margin: 5px;
+  background: #ca000000;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #ee8e4f;
   border-radius: 10px;
-  border: 3px solid #ffffff;
+  border: 3px solid #ff000000;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
