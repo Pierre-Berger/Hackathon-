@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../css/shophome.css";
 
 function Card({ catnipItems }) {
-  const { title, image, descriptionStore, price, starNumber } = catnipItems;
+  const { title, image, descriptionStore, price, starNumber, id } = catnipItems;
 
   return (
     <div className="card">
@@ -24,7 +24,7 @@ function Card({ catnipItems }) {
           {" "}
           À partir de <span className="star"> {price} euros </span>{" "}
         </p>
-        <Link to="/shop/test">
+        <Link to={`${id}`}>
           <button type="button" className="btnbuy">
             Voir le produit
           </button>
