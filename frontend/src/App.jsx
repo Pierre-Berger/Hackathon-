@@ -16,7 +16,7 @@ function App() {
           <Route path="/shop/:id" element={<CatnipItem />} />
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<ShopHome />} />
-          <Route path="/RecipeDetails" element={<RecipeDetails />} />
+          <Route path="/recipes/:id" element={<RecipeDetails />} />
           <Route path="/recipes" element={<Recipes />} />
         </Routes>
       </BrowserRouter>
