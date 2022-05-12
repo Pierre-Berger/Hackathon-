@@ -1,7 +1,7 @@
 const recipe = [
   {
     id: 1,
-    image: "frontend/src/assets/image/recette au thon.jpeg",
+    image: "../assets/image/thon.jpeg",
     title: "Recette au thon",
     ingredients: [
       "Farine 200gr",
