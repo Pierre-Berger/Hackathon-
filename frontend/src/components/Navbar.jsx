@@ -6,8 +6,8 @@ export default function Navbar() {
   return (
     <div className="navbar-cont">
       <div className="link-cont">
-        <Link to="/" className="link-nav">
-          WEED
+        <Link to="/shop" className="link-nav">
+          Chat&#39;Perché
         </Link>
       </div>
       <div className="logo-cont">
@@ -21,7 +21,7 @@ export default function Navbar() {
       </div>
       <div className="link-cont">
         <Link to="/Recipes" className="link-nav">
-          BOUFFE POUR CLEBS
+          Marmithon
         </Link>
       </div>
     </div>
