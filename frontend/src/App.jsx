@@ -4,7 +4,6 @@ import "./css/App.css";
 import Navbar from "./components/Navbar";
 import CatnipItem from "./pages/CatnipItem";
 
-
 function App() {
   return (
     <div className="App">
