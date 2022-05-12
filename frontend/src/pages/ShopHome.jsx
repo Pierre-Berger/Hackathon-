@@ -21,6 +21,10 @@ function ShopHome() {
           <img className="arrow" src="../src/assets/arrow.gif" alt="arrow" />
         </div>
       </div>
+      <div className="container-engagement">
+        <h2>Nos Engagements </h2>
+        <br />
+      </div>
       <div className="containercard">
         {catnipItems.map((el) => (
           <Card catnipItems={el} />
