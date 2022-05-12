@@ -21,6 +21,24 @@ code {
   pointer-events: none;
 }
 
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #ee8e4f #ffffff;
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ee8e4f;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

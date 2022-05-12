@@ -6,6 +6,13 @@
   --white: white;
   --font: "Quicksand";
 }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
 
 .container {
   background-color: var(--third);
