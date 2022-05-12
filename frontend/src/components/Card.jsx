@@ -1,25 +1,26 @@
 import React from "react";
-import "../assets/shophome.css";
-import test from "../assets/test.jpg";
+import "../css/shophome.css";
 
-function Card() {
+function Card({ catnipItems }) {
+  const { title, image, descriptionStore, price, starNumber } = catnipItems;
+
   return (
     <div className="card">
       <div className="imagecontainer">
-        <img className="imagecard" src={test} alt="img" />
+        <img className="imagecard" src={image} alt="img" />
       </div>
       <div className="titlecard">
-        <h3>Je suis un titre </h3>
+        <h3>{title}</h3>
       </div>
       <div className="bottomcard">
         <div className="pcard">
-          <p>
-            je suis une explication d&#39;un produit fictif qui est trop bien{" "}
-          </p>
+          <p>{descriptionStore}</p>
+          <p> Avis de nos clients :{"★".repeat(starNumber)} / 5</p>
         </div>
 
         <div className="btn-card">
-          <p> 60$</p>
+          <p className="price"> {price} $</p>
+
           <button type="button" className="btnbuy">
             click
           </button>

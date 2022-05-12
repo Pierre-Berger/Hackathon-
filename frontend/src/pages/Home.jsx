@@ -1,5 +1,5 @@
-import "../assets/home.css";
 import { Link } from "react-router-dom";
+import "../css/home.css";
 import gif1 from "../assets/gif1.gif";
 import croix from "../assets/croix.png";
 
