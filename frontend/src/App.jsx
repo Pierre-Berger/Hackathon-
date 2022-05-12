@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
       <BrowserRouter>
         <Routes>
           <Route path="/shop/test" element={<CatnipItem />} />
