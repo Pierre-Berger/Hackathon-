@@ -1,6 +1,7 @@
 import React from "react";
 import Recipe from "../components/Recipe";
 import "../css/RecipeDetails.css";
+import Comment from "../components/Comment";
 
 function RecipeDetails() {
   return (
@@ -19,6 +20,9 @@ function RecipeDetails() {
           <li>{el}</li>
         ))}
       </ul>
+      <div>
+        <Comment />
+      </div>
     </div>
   );
 }
