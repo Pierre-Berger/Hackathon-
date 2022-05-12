@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   background-color: var(--third);
-  gap: 30px;
 }
 .containercard {
   display: flex;
