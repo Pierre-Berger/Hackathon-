@@ -123,7 +123,7 @@ const recipe = [
   },
   {
     id: 7,
-    image: "../src/assets/image/pouletriz.webp",
+    image: "../src/assets/image/pouletriz.jpg",
     title: "Recette au Poulet et au riz",
     ingredients: [
       "Riz brun 60gr",
