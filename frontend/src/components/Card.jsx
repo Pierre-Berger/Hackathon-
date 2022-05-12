@@ -13,7 +13,9 @@ function Card() {
       </div>
       <div className="bottomcard">
         <div className="pcard">
-          <p> je suis une explication d'un produit fictif qui est trop bien </p>
+          <p>
+            je suis une explication d&#39;un produit fictif qui est trop bien{" "}
+          </p>
         </div>
 
         <div className="btn-card">
