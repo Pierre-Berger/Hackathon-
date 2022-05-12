@@ -7,7 +7,7 @@ export default function Navbar() {
     <div className="navbar-cont">
       <div className="link-cont">
         <Link to="/" className="link-nav">
-          WEED
+          {`CHAT'PERCHÉ`}
         </Link>
       </div>
       <div className="logo-cont">
@@ -21,7 +21,7 @@ export default function Navbar() {
       </div>
       <div className="link-cont">
         <Link to="/" className="link-nav">
-          BOUFFE POUR CLEBS
+          MARMITHON
         </Link>
       </div>
     </div>

@@ -11,7 +11,9 @@
   align-items: center;
   padding: 1rem;
 }
-
+.catnipItem-title{
+  padding: 1rem;
+}
 .catnipItem-image{
   width: auto;
   height: 40vh;
