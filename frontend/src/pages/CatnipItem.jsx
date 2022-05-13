@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import catnipItems from "../assets/catnipItems";
@@ -17,6 +17,10 @@ export default function CatnipItem() {
   };
 
   const arrowRightLimit = catnipItems.length - 1;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

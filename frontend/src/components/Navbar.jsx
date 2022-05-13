@@ -11,7 +11,7 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="logo-cont">
-        <Link to="/recipes">
+        <Link to="/">
           <img
             src="../src/assets/Logo-marmithon-orangesvg.svg"
             alt="Logo de chat"
