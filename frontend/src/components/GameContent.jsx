@@ -28,7 +28,7 @@ function GameContent() {
     }
   }, 10);
   const isMobile = navigator.userAgentData.mobile;
-
+  console.log(isMobile);
   return (
     <div className="containered">
       <div className="game-container">
@@ -39,21 +39,12 @@ function GameContent() {
         <p>Clique sur start et échappe au kaaris sauvage</p>
       </div>
       <div className="button-start">
-        {isMobile ? (
-          <button
-            type="button"
-            onKeyDown={(() => setIsJump(!isJump), () => setIsJump(!isJump))}
-          >
-            Start
-          </button>
-        ) : (
-          <button
-            type="button"
-            onClick={(() => setIsJump(!isJump), () => setIsJump(!isJump))}
-          >
-            Start
-          </button>
-        )}
+        <button
+          type="button"
+          onKeyDown={(() => setIsJump(!isJump), () => setIsJump(!isJump))}
+        >
+          Start
+        </button>
       </div>
     </div>
   );
