@@ -2,53 +2,50 @@ import { useState } from "react";
 import CartBubble from "./CartBubble";
 import "../css/cart.css";
 
-export default function Cart({ catnipItems, cart, updateCart, idItem }) {
+export default function Cart({ catnipItems, cart, cartUpdater }) {
   const [isOpen, setisOpen] = useState(false);
+  const itemsInCart = catnipItems.filter((e) => cart[e.id] > 0);
+  console.log(itemsInCart);
 
-  const kaaris = catnipItems.find((item) => item.id === idItem.id);
+  let total = 0;
+  for (let i = 0; i < catnipItems.length; i += 1) {
+    total += catnipItems[i].price * cart[i];
+  }
 
-  const handleClickMinus = () => {
-    updateCart(cart - 1);
-  };
-  const handleClickPlus = () => {
-    updateCart(cart + 1);
-  };
-
-  // eslint-disable-next-line no-unused-vars
-  const [cartCount, setCartCount] = useState([{}]);
-
-  console.log(cartCount);
   return isOpen ? (
     <div className="cart-component">
       <CartBubble setisOpen={setisOpen} isOpen={isOpen} />
       <h2>Panier</h2>
-      {cart > 0 ? (
+      {cart.reduce((a, b) => a + b) > 0 ? (
         <div className="cart-content-container">
-          <div className="cart-content">
-            <div className="article-cart">
-              <h3>Articles</h3>
-              <div>{`${kaaris ? kaaris.title : null} : ${
-                kaaris ? kaaris.price : null
-              }€`}</div>
-            </div>
-            <div className="quantity-cart">
-              <h3>Quantité</h3>
-              <div>{cart}</div>
-            </div>
-            <div className="modif">
-              <h3>- / +</h3>
-              <div>
-                <button type="button" onClick={handleClickMinus}>
-                  -
-                </button>
-                <button type="button" onClick={handleClickPlus}>
-                  +
-                </button>
+          {itemsInCart.map((e) => (
+            <div className="cart-content">
+              <div className="article-cart">
+                <h3>Articles</h3>
+                <div>{`${e.title}`}</div>
+              </div>
+              <div className="quantity-cart">
+                <h3>Quantité</h3>
+                <div>{cart[e.id]}</div>
+              </div>
+              <div className="modif">
+                <h3>- / +</h3>
+                <div>
+                  <button
+                    type="button"
+                    onClick={() => cartUpdater(e.id, false)}
+                  >
+                    -
+                  </button>
+                  <button type="button" onClick={() => cartUpdater(e.id, true)}>
+                    +
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
+          ))}
 
-          <h3 className="total">{`Total : ${kaaris.price * cart}€`}</h3>
+          <h3 className="total">{`Total : ${total}€`}</h3>
         </div>
       ) : (
         <div>

@@ -5,12 +5,11 @@ import Home from "./pages/Home";
 import "./css/App.css";
 import ShopHome from "./pages/ShopHome";
 import RecipeDetails from "./pages/RecipeDetails";
-
 import CatnipItem from "./pages/CatnipItem";
 import Recipes from "./pages/Recipes";
-// You can also use <link> for styles
-// ..
+import GameContent from "./components/GameContent";
 AOS.init();
+
 function App() {
   return (
     <div className="App">
@@ -21,6 +20,7 @@ function App() {
           <Route path="/shop" element={<ShopHome />} />
           <Route path="/recipes/:id" element={<RecipeDetails />} />
           <Route path="/recipes" element={<Recipes />} />
+          <Route path="/GameContent" element={<GameContent />} />
         </Routes>
       </BrowserRouter>
     </div>
