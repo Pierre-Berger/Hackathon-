@@ -1,5 +1,33 @@
+h3 {
+  padding: 1rem;
+}
+
+.comment-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 150px;
+  width: 100%;
+  border: var(--primary) solid;
+  background-color: white;
+  margin-bottom: 2rem;
+  
+}
+.comment-element{
+  gap: 1rem;
+}
+
 .comment-button {
-  background-color: var(--third);
+  background-color: white;
   border-style: none;
   border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.cat-image{
+  width: 150px;
+  height: 150px;
+}
+
+.text-part{
+  padding: 0.5rem;
 }
