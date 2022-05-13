@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import Home from "./pages/Home";
 import "./css/App.css";
 import ShopHome from "./pages/ShopHome";
@@ -12,10 +13,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/shop/test" element={<CatnipItem />} />
+          <Route path="/shop/:id" element={<CatnipItem />} />
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<ShopHome />} />
-          <Route path="/RecipeDetails" element={<RecipeDetails />} />
+          <Route path="/recipes/:id" element={<RecipeDetails />} />
           <Route path="/recipes" element={<Recipes />} />
           <Route path="/GameContent" element={<GameContent />} />
         </Routes>
