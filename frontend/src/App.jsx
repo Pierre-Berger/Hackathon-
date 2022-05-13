@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Home from "./pages/Home";
 import "./css/App.css";
 import ShopHome from "./pages/ShopHome";
@@ -7,6 +8,7 @@ import RecipeDetails from "./pages/RecipeDetails";
 import CatnipItem from "./pages/CatnipItem";
 import Recipes from "./pages/Recipes";
 import GameContent from "./components/GameContent";
+AOS.init();
 
 function App() {
   return (
