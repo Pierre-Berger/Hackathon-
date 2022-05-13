@@ -1,8 +1,15 @@
+import image1 from "./images/catnip-1.jpg";
+import image2 from "./images/catnip-2.jpg";
+import image3 from "./images/catnip-3.jpg";
+import image4 from "./images/catnip-4.jpg";
+import image5 from "./images/catnip-5.jpg";
+import image6 from "./images/catnip-6.jpg";
+
 const catnipItems = [
   {
     id: 0,
     title: "Catnip Claws",
-    image: "../src/assets/images/catnip-1.jpg",
+    image: image1,
     descriptionStore: "Une herbe qui va chatouiller !",
     description: [
       "A peu près 10 doses de feuilles séchèes et de bourgeons (pas d'ajouts d'autres plantes, seulement une herbe à chat pure.",
@@ -16,7 +23,7 @@ const catnipItems = [
   {
     id: 1,
     title: "Frisco Natural Catnip",
-    image: "../src/assets/images/catnip-2.jpg",
+    image: image2,
     descriptionStore: "Chaperlipopette ! Une herbe qui fouette !",
     description: [
       "Parfum 100% naturel de haute qualité, feuilles aromatiques et bourgeons pour le plaisir de vos chats. Elevée pour un potentiel optimal, une couleur riche et un arôme irrésistible pour votre chat.",
@@ -29,7 +36,7 @@ const catnipItems = [
   {
     id: 2,
     title: "Yeowww Catnip",
-    image: "../src/assets/images/catnip-3.jpg",
+    image: image3,
     descriptionStore: "Ca donnerait envie d'être un chat !",
     description: [
       "Redonnez une nouvelle vie aux accessoires de votre chat grâce à cette herbe à chat séchée d’excellente qualité et issue de culture biologique.",
@@ -42,7 +49,7 @@ const catnipItems = [
   {
     id: 3,
     title: "Punky Kat",
-    image: "../src/assets/images/catnip-4.jpg",
+    image: image4,
     descriptionStore: "Soutenez les félins et choyez le vôtre !",
     description: [
       "Une herbe à chat si forte que vous jureriez qu'elle est illégale. Nous ajoutons de la racine de valériane, boostant l'attirance de votre chat d'environ 23% par rapport à une herbe à chat classique et permettant d'avoir un effet plus efficace et plus long sur la durée.",
@@ -54,7 +61,7 @@ const catnipItems = [
   {
     id: 4,
     title: "Meowijuana",
-    image: "../src/assets/images/catnip-5.jpg",
+    image: image5,
     descriptionStore: "Ramenez la Jamaïque à la maison",
     description: [
       "Notre herbe à chat 100% bio est fabriquée à partir des bourgeons les plus purs et plus parfumés. C'est rééllement la plus pure des Meowijuanas que vous pouvez trouver sur le marché",
@@ -67,7 +74,7 @@ const catnipItems = [
   {
     id: 5,
     title: "Just Catnip",
-    image: "../src/assets/images/catnip-6.jpg",
+    image: image6,
     descriptionStore: "Ceci n'est pas de l'herbe à chat !",
     description: [
       "Donnez à votre ami à poils la friandise parfaite pour qu'il soit relaxé et qu'il ronronne dans la paix la plus parfaite.",

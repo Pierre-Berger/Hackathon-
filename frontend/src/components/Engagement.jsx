@@ -1,5 +1,6 @@
 import React from "react";
 import elonmusk from "../assets/elon-musk-smoke.gif";
+import medaille from "../assets/medaille.png";
 
 function Engagement() {
   return (
@@ -11,7 +12,7 @@ function Engagement() {
         data-aos-duration="1000"
         className="engagement"
       >
-        <img className="medaille" src="../src/assets/medaille.png" alt="" />
+        <img className="medaille" src={medaille} alt="" />
         <h3>
           Des <span className="spangreen"> herbes </span>de qualité, developpées
           avec <span className="spangreen"> des acteurs locaux</span>

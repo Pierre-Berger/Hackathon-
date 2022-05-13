@@ -1,7 +1,18 @@
+import image1 from "../assets/image/thon.jpeg";
+import image2 from "../assets/image/viande.jpg";
+import image3 from "../assets/image/softvegetarienne.jpg";
+import image4 from "../assets/image/agneauyaourt.webp";
+import image5 from "../assets/image/crustacés.webp";
+import image6 from "../assets/image/porc.webp";
+import image7 from "../assets/image/pouletriz.jpg";
+import image8 from "../assets/image/courgepoisson.jpeg";
+import image9 from "../assets/images/parpain.jpg";
+import image10 from "../assets/images/kaaris.jpg";
+
 const recipe = [
   {
     id: 0,
-    image: "../src/assets/image/thon.jpeg",
+    image: image1,
     title: "Recette au thon",
     ingredients: [
       "Farine 200gr",
@@ -29,7 +40,7 @@ const recipe = [
   },
   {
     id: 1,
-    image: "../src/assets/image/viande.jpg",
+    image: image2,
     title: "Recette a la viande",
     ingredients: [
       "Farine 200gr",
@@ -59,7 +70,7 @@ const recipe = [
   },
   {
     id: 2,
-    image: "../src/assets/image/softvegetarienne.jpg",
+    image: image3,
     title: "Recette soft vegetarienne",
     ingredients: [
       "Farine 100gr",
@@ -88,7 +99,7 @@ const recipe = [
   },
   {
     id: 3,
-    image: "../src/assets/image/agneauyaourt.webp",
+    image: image4,
     title: "Recette agneau et yaourt",
     ingredients: [
       "Viande d'agneau 100gr",
@@ -115,7 +126,7 @@ const recipe = [
   },
   {
     id: 4,
-    image: "../src/assets/image/crustacés.webp",
+    image: image5,
     title: "Recette au crustacés",
     ingredients: [
       "Crevette 50gr",
@@ -140,7 +151,7 @@ const recipe = [
   },
   {
     id: 5,
-    image: "../src/assets/image/porc.webp",
+    image: image6,
     title: "Recette au porc",
     ingredients: [
       "Porc 100gr",
@@ -164,7 +175,7 @@ const recipe = [
   },
   {
     id: 6,
-    image: "../src/assets/image/pouletriz.jpg",
+    image: image7,
     title: "Recette au Poulet et au riz",
     ingredients: [
       "Riz brun 60gr",
@@ -192,7 +203,7 @@ const recipe = [
   },
   {
     id: 7,
-    image: "../src/assets/image/courgepoisson.jpeg",
+    image: image8,
     title: "Recette a la courge et au poisson",
     ingredients: [
       "Poisson 500gr",
@@ -221,7 +232,7 @@ const recipe = [
   },
   {
     id: 8,
-    image: "../src/assets/images/parpain.jpg",
+    image: image9,
     title: "Recette parpain",
     ingredients: ["parpain"],
     steps: [
@@ -242,7 +253,7 @@ const recipe = [
   },
   {
     id: 9,
-    image: "../src/assets/images/kaaris.jpg",
+    image: image10,
     title: "Recette BIZON",
     ingredients: [
       "Back to the future",
