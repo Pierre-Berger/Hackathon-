@@ -1,4 +1,5 @@
 import React from "react";
+import elonmusk from "../assets/elon-musk-smoke.gif";
 
 function Engagement() {
   return (
@@ -33,11 +34,7 @@ function Engagement() {
         data-aos-duration="1000"
         className="engagement"
       >
-        <img
-          className="gifelon"
-          src="../src/assets/elon-musk-smoke.gif"
-          alt="gif"
-        />
+        <img className="gifelon" src={elonmusk} alt="gif" />
         <h3>
           {" "}
           <span className="spangreen">Testées et Validées </span> par des

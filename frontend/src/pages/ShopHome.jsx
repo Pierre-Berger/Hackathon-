@@ -5,6 +5,8 @@ import "../css/shophome.css";
 import Navbar from "../components/Navbar";
 import catnipItems from "../assets/catnipItems";
 import Engagement from "../components/Engagement";
+import gifhome from "../assets/arrow.gif";
+import video from "../assets/video2.mp4";
 
 function ShopHome() {
   return (
@@ -12,7 +14,7 @@ function ShopHome() {
       <Navbar />
       <div className="videocontainer">
         <video className="video" autoPlay loop muted>
-          <source src="../src/assets/video2.mp4" type="video/mp4" />{" "}
+          <source src={video} type="video/mp4" />{" "}
         </video>
         <div className="video-title-container">
           <h1 className="videotitle">Chat&#39;Perché </h1>
@@ -20,7 +22,7 @@ function ShopHome() {
             Premiere boutique d&#39;herbe à chat de France &#127467;&#127479;
           </h1>
           <div className="arrowcontainer">
-            <img className="arrow" src="../src/assets/arrow.gif" alt="arrow" />
+            <img className="arrow" src={gifhome} alt="arrow" />
           </div>
         </div>
       </div>

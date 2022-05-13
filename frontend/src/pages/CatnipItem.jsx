@@ -6,6 +6,8 @@ import catnipItems from "../assets/catnipItems";
 import "../css/catnipItem.css";
 import Cart from "../components/Cart";
 import Comment from "../components/Comment";
+import arrow from "../assets/images/arrow-right.png";
+import arrowleft from "../assets/images/arrow-left.png";
 
 export default function CatnipItem() {
   const { id } = useParams();
@@ -28,7 +30,6 @@ export default function CatnipItem() {
   };
   console.log(localStorage.getItem("cart"));
   console.log("carte", cart);
-
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -60,11 +61,7 @@ export default function CatnipItem() {
             }
           >
             <button type="button" className="btnbuy">
-              <img
-                src="../src/assets/images/arrow-left.png"
-                alt="arrow-left"
-                className="arrow-left"
-              />
+              <img src={arrowleft} alt="arrow-left" className="arrow-left" />
             </button>
           </Link>
 
@@ -76,11 +73,7 @@ export default function CatnipItem() {
             }
           >
             <button type="button" className="btnbuy">
-              <img
-                src="../src/assets/images/arrow-right.png"
-                alt="arrow-right"
-                className="arrow-right"
-              />
+              <img src={arrow} alt="arrow-right" className="arrow-right" />
             </button>
           </Link>
         </div>
