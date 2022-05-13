@@ -24,28 +24,6 @@
   padding-top: 1rem;
 }
 
-.catnipItem-image {
-  position: relative;
-}
-
-.arrow-container-zero {
-  width: 90vw;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 1rem;
-  padding-top: 1rem;
-}
-
-.arrow-container-zero button {
-  background-color: #ff934f;
-  width: 40px;
-}
-
-.arrow-container-zero button > img {
-  width: 40px;
-  height: 40px;
-}
-
 .arrow-container button {
   background-color: #ff934f;
   width: 40px;
