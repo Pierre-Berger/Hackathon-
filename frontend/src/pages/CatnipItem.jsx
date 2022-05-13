@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 // import { useEffect } from "react/cjs/react.production.min";

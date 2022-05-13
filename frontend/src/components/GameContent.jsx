@@ -7,7 +7,7 @@ import "../css/Game.css";
 function GameContent() {
   const cat = document.getElementById("cat");
   const kaaris = document.getElementById("kaaris");
-  const [isJump, setIsJump] = useState(false);
+  const [isJump, setIsJump] = useState(true);
   if (isJump === "true") {
     setIsJump(false);
   }
@@ -29,7 +29,7 @@ function GameContent() {
   }, 10);
 
   return (
-    <div className="container">
+    <div className="containered">
       <div className="game-container">
         <div id="cat" className={isJump ? "jump" : "no-jump"} />
         <div id="kaaris" />
