@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+// import { useEffect } from "react/cjs/react.production.min";
 import Navbar from "../components/Navbar";
 import catnipItems from "../assets/catnipItems";
 import "../css/catnipItem.css";
@@ -8,15 +9,26 @@ import Comment from "../components/Comment";
 
 export default function CatnipItem() {
   const { id } = useParams();
-  const [cart, updateCart] = useState(0);
-  const [idItem, setidItem] = useState(id);
-
-  const handleClick = () => {
-    updateCart(cart + 1);
-    setidItem(catnipItems[parseInt(id, 10)]);
-  };
+  // charger le localstorage
+  // if cart exist alors JSON.parse le lCS sinon empty array
+  const localStoreCart = localStorage.getItem("cart") || "[0, 0, 0, 0, 0, 0]";
+  console.log(localStoreCart);
+  const [cart, updateCart] = useState(JSON.parse(localStoreCart));
 
   const arrowRightLimit = catnipItems.length - 1;
+  const cartUpdater = (index, addOrNot) => {
+    const bastien = [...cart];
+    if (addOrNot) {
+      bastien[index] += 1;
+    } else if (!addOrNot && bastien[index] > 0) {
+      bastien[index] -= 1;
+    }
+    updateCart(bastien);
+    localStorage.setItem("cart", JSON.stringify(bastien));
+  };
+  console.log(localStorage.getItem("cart"));
+  console.log("carte", cart);
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,9 +39,10 @@ export default function CatnipItem() {
       <Navbar />
       <Cart
         cart={cart}
-        idItem={idItem}
+        idItem={id}
         updateCart={updateCart}
         catnipItems={catnipItems}
+        cartUpdater={cartUpdater}
       />
       <div className="catnipItem-article">
         <h1 className="catnipItem-title">{catnipItems[id].title}</h1>
@@ -88,7 +101,7 @@ export default function CatnipItem() {
         <button
           className="catnipItem-button"
           type="button"
-          onClick={handleClick}
+          onClick={() => cartUpdater(id, true)}
         >
           Ajouter au panier
         </button>
