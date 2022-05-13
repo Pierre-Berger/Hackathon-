@@ -12,7 +12,6 @@ export default function CatnipItem() {
   // charger le localstorage
   // if cart exist alors JSON.parse le lCS sinon empty array
   const localStoreCart = localStorage.getItem("cart") || "[0, 0, 0, 0, 0, 0]";
-  console.log(localStoreCart);
   const [cart, updateCart] = useState(JSON.parse(localStoreCart));
 
   const arrowRightLimit = catnipItems.length - 1;
@@ -26,9 +25,6 @@ export default function CatnipItem() {
     updateCart(bastien);
     localStorage.setItem("cart", JSON.stringify(bastien));
   };
-  console.log(localStorage.getItem("cart"));
-  console.log("carte", cart);
-
 
   useEffect(() => {
     window.scrollTo(0, 0);
