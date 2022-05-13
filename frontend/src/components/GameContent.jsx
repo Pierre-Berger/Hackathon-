@@ -1,27 +1,47 @@
-/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-import React, { useState, useEffect } from "react";
+/* eslint-disable no-unused-vars */
+/* eslint-disable func-names */
+/* eslint-disable no-alert */
+import React, { useState } from "react";
 import "../css/Game.css";
 
 function GameContent() {
-  const catGamer = document.getElementById("cat");
-  const [nik, setNik] = useState(0);
-  function jump() {
-    catGamer.classList.add("jump");
-    setNik(nik + 1);
+  const cat = document.getElementById("cat");
+  const kaaris = document.getElementById("kaaris");
+  const [isJump, setIsJump] = useState(false);
+  if (isJump === "true") {
+    setIsJump(false);
   }
+  const isAlive = setInterval(function () {
+    const catTop = parseInt(
+      window.getComputedStyle(cat).getPropertyValue("top"),
+      10
+    );
+    const kaarisLeft = parseInt(
+      window.getComputedStyle(kaaris).getPropertyValue("left"),
+      10
+    );
 
-  useEffect(() => {
-    // eslint-disable-next-line no-console
-    console.log("nik");
-  }, [nik]);
+    if (kaarisLeft < 80 && kaarisLeft > 0 && catTop >= 300) {
+      if (window.confirm("GameOver!")) {
+        window.location.reload(true);
+      }
+    }
+  }, 10);
+
   return (
-    <div className="game-container">
-      <div tabIndex={-1} id="cat" />
-      <div className="kaaris" />
-      <button type="button" onClick={() => jump()}>
-        yo
-      </button>
+    <div className="container">
+      <div className="game-container">
+        <div id="cat" className={isJump ? "jump" : "no-jump"} />
+        <div id="kaaris" />
+      </div>
+      <div className="button-start">
+        <button
+          type="button"
+          onKeyDown={(() => setIsJump(!isJump), () => setIsJump(!isJump))}
+        >
+          Start
+        </button>
+      </div>
     </div>
   );
 }

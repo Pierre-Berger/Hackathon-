@@ -1,38 +1,83 @@
+.container {
+  position: fixed;
+  height: 844px;
+  background-image: url(../assets/ruelle.jpg);
+  background-size: cover;
+}
+
+.button-start {
+  position: absolute;
+  top: 720px;
+  left: 160px;
+}
+
+.button-start > button {
+  height: 50px;
+  width: 100px;
+  background-color: var(--secondary);
+}
+
 .game-container {
   width: 600px;
-  height: 200px;
+  height: 500px;
   border: 1px solid black;
-  margin: auto;
+  margin: 0;
+  position: fixed top;
 }
 
 #cat {
-  width: 50px;
-  height: 50px;
-  background-image: url(../assets/catJumper.jpg);
-  background-size: contain;
-
+  width: 100px;
+  height: 100px;
+  background-image: url(../assets/gif1.gif);
+  background-size: cover;
   position: relative;
-  top: 150px;
+  top: 400px;
 }
 
 .jump {
-  animation: jump 0.3s linear;
+  animation: jump 0.8s linear;
 }
 
 @keyframes jump {
   0% {
-    top: 150px;
+    top: 400px;
   }
-  30% {
-    top: 130px;
+  20% {
+    top: 300px;
+  }
+  40% {
+    top: 200px;
   }
   50% {
-    top: 80px;
+    top: 100px;
+  }
+  60% {
+    top: 200px;
   }
   80% {
-    top: 130px;
+    top: 300px;
   }
   100% {
-    top: 150px;
+    top: 400px;
+  }
+}
+
+#kaaris {
+  width: 60px;
+  height: 80px;
+  top: 320px;
+  left: 580px;
+  position: relative;
+  background-image: url(../assets/kaaris.jpg);
+  background-size: cover;
+  animation: block 1.5s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -20px;
   }
 }
