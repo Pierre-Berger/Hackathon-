@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 // import { useEffect } from "react/cjs/react.production.min";
 import Navbar from "../components/Navbar";
 import catnipItems from "../assets/catnipItems";
 import "../css/catnipItem.css";
 import Cart from "../components/Cart";
+import Comment from "../components/Comment";
 
 export default function CatnipItem() {
   const { id } = useParams();
@@ -27,6 +28,12 @@ export default function CatnipItem() {
   };
   console.log(localStorage.getItem("cart"));
   console.log("carte", cart);
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Navbar />
@@ -98,6 +105,8 @@ export default function CatnipItem() {
         >
           Ajouter au panier
         </button>
+
+        <Comment />
       </div>
     </div>
   );
