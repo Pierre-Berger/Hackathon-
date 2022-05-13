@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import CartBubble from "./CartBubble";
 import "../css/cart.css";
 
 export default function Cart({ catnipItems, cart, updateCart, idItem }) {
   const [isOpen, setisOpen] = useState(false);
-  const [cartCount, setCartCount] = useState([]);
+
   const kaaris = catnipItems.find((item) => item.id === idItem.id);
 
   const handleClickMinus = () => {
@@ -14,25 +14,9 @@ export default function Cart({ catnipItems, cart, updateCart, idItem }) {
     updateCart(cart + 1);
   };
 
-  const stateStorage = JSON.parse(localStorage.getItem("panier"));
+  // eslint-disable-next-line no-unused-vars
+  const [cartCount, setCartCount] = useState([{}]);
 
-  useEffect(() => {
-    if (stateStorage !== null) {
-      console.log("pas ici");
-      if (cartCount) {
-        setCartCount({ idItem, cart });
-        console.log("ici");
-        console.log(stateStorage);
-      } else if (stateStorage.idItem.id !== kaaris.id) {
-        setCartCount({ ...cartCount } + { idItem, cart });
-      }
-    }
-  }, [idItem, cart]);
-  const test =
-    !stateStorage || cartCount
-      ? localStorage.setItem("panier", JSON.stringify(cartCount))
-      : null;
-  console.log(test);
   console.log(cartCount);
   return isOpen ? (
     <div className="cart-component">
