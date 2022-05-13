@@ -29,7 +29,7 @@ function GameContent() {
   }, 10);
 
   return (
-    <div className="container">
+    <div className="containered">
       <div className="game-container">
         <div id="cat" className={isJump ? "jump" : "no-jump"} />
         <div id="kaaris" />
