@@ -23,7 +23,7 @@ function GameContent() {
 
     if (kaarisLeft < 80 && kaarisLeft > 0 && catTop >= 300) {
       if (window.confirm("GameOver!")) {
-        window.location.reload(true);
+        window.location.reload();
       }
     }
   }, 10);
