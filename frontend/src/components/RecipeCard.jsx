@@ -11,7 +11,7 @@ function RecipeCard({ recipe }) {
           className="image-de-plat"
         />
       </div>
-      <div className="recipe-title"> {recipe.title} </div>
+      <h3 className="recipe-title">{recipe.title} </h3>
     </Link>
   );
 }
