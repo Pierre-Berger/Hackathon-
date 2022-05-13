@@ -14,12 +14,6 @@ export default function CatnipItem() {
     setidItem(catnipItems[parseInt(id, 10)]);
   };
   const arrowRightLimit = catnipItems.length - 1;
-  let classNameArrow = "";
-  if (parseInt(id, 20) === 0) {
-    classNameArrow += "arrow-container-zero";
-  } else {
-    classNameArrow += "arrow-container";
-  }
   return (
     <div>
       <Navbar />
@@ -36,30 +30,38 @@ export default function CatnipItem() {
           src={catnipItems[id].image}
           alt={catnipItems[id].title}
         />
-        <div className={classNameArrow}>
-          {parseInt(id, 20) === 0 ? null : (
-            <Link to={`/shop/${parseInt(id, 20) - 1}`}>
-              <button type="button" className="btnbuy">
-                <img
-                  src="../src/assets/images/arrow-left.png"
-                  alt="arrow-left"
-                  className="arrow-left"
-                />
-              </button>
-            </Link>
-          )}
+        <div className="arrow-container">
+          <Link
+            to={
+              parseInt(id, 20) === 0
+                ? `/shop/${arrowRightLimit}`
+                : `/shop/${parseInt(id, 20) - 1}`
+            }
+          >
+            <button type="button" className="btnbuy">
+              <img
+                src="../src/assets/images/arrow-left.png"
+                alt="arrow-left"
+                className="arrow-left"
+              />
+            </button>
+          </Link>
 
-          {parseInt(id, 20) >= arrowRightLimit ? null : (
-            <Link to={`/shop/${parseInt(id, 20) + 1}`}>
-              <button type="button" className="btnbuy">
-                <img
-                  src="../src/assets/images/arrow-right.png"
-                  alt="arrow-right"
-                  className="arrow-right"
-                />
-              </button>
-            </Link>
-          )}
+          <Link
+            to={
+              parseInt(id, 20) >= arrowRightLimit
+                ? "/shop/0"
+                : `/shop/${parseInt(id, 20) + 1}`
+            }
+          >
+            <button type="button" className="btnbuy">
+              <img
+                src="../src/assets/images/arrow-right.png"
+                alt="arrow-right"
+                className="arrow-right"
+              />
+            </button>
+          </Link>
         </div>
 
         <div className="catnipItem-description">
