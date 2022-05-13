@@ -5,6 +5,14 @@
   background-size: cover;
 }
 
+.kaaris-warning {
+  position: absolute;
+  top: 620px;
+  left: 10px;
+  color: var(--secondary);
+  font-size: 18px;
+}
+
 .button-start {
   position: absolute;
   top: 720px;

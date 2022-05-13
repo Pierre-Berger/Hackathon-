@@ -34,6 +34,9 @@ function GameContent() {
         <div id="cat" className={isJump ? "jump" : "no-jump"} />
         <div id="kaaris" />
       </div>
+      <div className="kaaris-warning">
+        <p>Clique sur start et échappe au kaaris sauvage</p>
+      </div>
       <div className="button-start">
         <button
           type="button"
