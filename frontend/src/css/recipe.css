@@ -14,7 +14,7 @@
 }
 .recipe-card {
   position: relative;
-  display: block;
+  display: flex;
   flex-direction: column;
   box-shadow: 0 0 5px black;
   min-width: 15rem;
@@ -36,11 +36,30 @@
   margin: 0;
   text-align: start;
   margin-left: 1rem;
+  z-index: 100;
 }
-.image-de-plat {
+.image-de-plat-cont {
   overflow: hidden;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  height: 4.5rem;
+  width: 90vw;
+  height: 80%;
+}
+.image-de-plat{
   max-width: 100%;
+  width: 55vh;
+  z-index: 9;
+  position: absolute;
+  left: 0;
+  top: -80%;
+}
+.recipe-title{
+  padding-top: 0.75rem;
+  z-index: 10;
+height: 20%;
+background-color: rgb(255, 255, 255);
+justify-self:center;
+align-self: center;
+width: 100%;
+box-shadow: inset 0 20px 20px -20px black;
 }
