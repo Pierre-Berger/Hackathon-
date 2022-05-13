@@ -25,8 +25,6 @@ export default function CatnipItem() {
     updateCart(bastien);
     localStorage.setItem("cart", JSON.stringify(bastien));
   };
-  console.log(localStorage.getItem("cart"));
-  console.log("carte", cart);
   return (
     <div>
       <Navbar />
