@@ -1,17 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 // import { useEffect } from "react/cjs/react.production.min";
 import Navbar from "../components/Navbar";
 import catnipItems from "../assets/catnipItems";
 import "../css/catnipItem.css";
 import Cart from "../components/Cart";
+import Comment from "../components/Comment";
 
 export default function CatnipItem() {
   const { id } = useParams();
   // charger le localstorage
   // if cart exist alors JSON.parse le lCS sinon empty array
   const localStoreCart = localStorage.getItem("cart") || "[0, 0, 0, 0, 0, 0]";
-  console.log(localStoreCart);
   const [cart, updateCart] = useState(JSON.parse(localStoreCart));
 
   const arrowRightLimit = catnipItems.length - 1;
@@ -25,6 +25,11 @@ export default function CatnipItem() {
     updateCart(bastien);
     localStorage.setItem("cart", JSON.stringify(bastien));
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Navbar />
@@ -96,6 +101,8 @@ export default function CatnipItem() {
         >
           Ajouter au panier
         </button>
+
+        <Comment />
       </div>
     </div>
   );
