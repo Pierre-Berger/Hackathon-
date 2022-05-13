@@ -7,7 +7,7 @@ import "../css/Game.css";
 function GameContent() {
   const cat = document.getElementById("cat");
   const kaaris = document.getElementById("kaaris");
-  const [isJump, setIsJump] = useState(false);
+  const [isJump, setIsJump] = useState(true);
   if (isJump === "true") {
     setIsJump(false);
   }

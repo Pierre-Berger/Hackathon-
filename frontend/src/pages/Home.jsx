@@ -12,7 +12,11 @@ export default function Home() {
         <h2>Chat&#39;Perché</h2>
       </div>
       <div className="gifcontainer">
-        <img className="gif" src={gif1} alt="logo" />
+        <Link to="/GameContent">
+          <button className="btn-game" type="button">
+            <img className="gif" src={gif1} alt="logo" />
+          </button>
+        </Link>
       </div>
       <div className="linkcontainer">
         <div className="btn-marmithon">

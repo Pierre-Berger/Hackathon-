@@ -15,6 +15,11 @@ p {
   padding: 0;
 }
 
+.btn-game {
+  background-color: var(--third);
+  border: none;
+}
+
 .container {
   background-color: var(--third);
   height: 100vh;
