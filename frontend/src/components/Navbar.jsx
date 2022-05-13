@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/navbar.css";
 import { Link } from "react-router-dom";
+import logomarmithon from "../assets/Logo-marmithon-orangesvg.svg";
 
 export default function Navbar() {
   return (
@@ -12,11 +13,7 @@ export default function Navbar() {
       </div>
       <div className="logo-cont">
         <Link to="/">
-          <img
-            src="../src/assets/Logo-marmithon-orangesvg.svg"
-            alt="Logo de chat"
-            className="cat-logo"
-          />
+          <img src={logomarmithon} alt="Logo de chat" className="cat-logo" />
         </Link>
       </div>
       <div className="link-cont">

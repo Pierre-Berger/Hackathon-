@@ -7,6 +7,7 @@ import ShopHome from "./pages/ShopHome";
 import RecipeDetails from "./pages/RecipeDetails";
 import CatnipItem from "./pages/CatnipItem";
 import Recipes from "./pages/Recipes";
+
 import GameContent from "./components/GameContent";
 
 AOS.init();
