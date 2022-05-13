@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import catnipItems from "../assets/catnipItems";
 import "../css/catnipItem.css";
@@ -14,6 +14,8 @@ export default function CatnipItem() {
     updateCart(cart + 1);
     setidItem(catnipItems[parseInt(id, 10)]);
   };
+
+  const arrowRightLimit = catnipItems.length - 1;
 
   return (
     <div>
@@ -31,6 +33,40 @@ export default function CatnipItem() {
           src={catnipItems[id].image}
           alt={catnipItems[id].title}
         />
+        <div className="arrow-container">
+          <Link
+            to={
+              parseInt(id, 20) === 0
+                ? `/shop/${arrowRightLimit}`
+                : `/shop/${parseInt(id, 20) - 1}`
+            }
+          >
+            <button type="button" className="btnbuy">
+              <img
+                src="../src/assets/images/arrow-left.png"
+                alt="arrow-left"
+                className="arrow-left"
+              />
+            </button>
+          </Link>
+
+          <Link
+            to={
+              parseInt(id, 20) >= arrowRightLimit
+                ? "/shop/0"
+                : `/shop/${parseInt(id, 20) + 1}`
+            }
+          >
+            <button type="button" className="btnbuy">
+              <img
+                src="../src/assets/images/arrow-right.png"
+                alt="arrow-right"
+                className="arrow-right"
+              />
+            </button>
+          </Link>
+        </div>
+
         <div className="catnipItem-description">
           <ul>
             {catnipItems[id].description.map((el) => (
