@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import catnipItems from "../assets/catnipItems";
 import "../css/catnipItem.css";
 import Cart from "../components/Cart";
+import Comment from "../components/Comment";
 
 export default function CatnipItem() {
   const { id } = useParams();
@@ -87,6 +88,8 @@ export default function CatnipItem() {
         >
           Ajouter au panier
         </button>
+
+        <Comment />
       </div>
     </div>
   );
