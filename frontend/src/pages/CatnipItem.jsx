@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 // import { useEffect } from "react/cjs/react.production.min";
@@ -14,7 +15,6 @@ export default function CatnipItem() {
   // charger le localstorage
   // if cart exist alors JSON.parse le lCS sinon empty array
   const localStoreCart = localStorage.getItem("cart") || "[0, 0, 0, 0, 0, 0]";
-  console.log(localStoreCart);
   const [cart, updateCart] = useState(JSON.parse(localStoreCart));
 
   const arrowRightLimit = catnipItems.length - 1;

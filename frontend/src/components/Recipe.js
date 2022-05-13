@@ -219,6 +219,54 @@ const recipe = [
       healthy: true,
     },
   },
+  {
+    id: 8,
+    image: "../src/assets/images/parpain.jpg",
+    title: "Recette parpain",
+    ingredients: ["parpain"],
+    steps: [
+      "Faites bouillir le parpain et la parpain.",
+      "Dans une casserole séparée, faites également bouillir les deux parpain et une fois cuits, écrasez-les avec le gravier inclus, idéal pour un apport supplémentaire en cailloux.",
+      "Coupez le parpain en petits cubes et ajoutez-le dans la poêle en le faisant cuire légèrement pour éviter tout problème de santé.",
+      "Mélangez tous les ingrédients : les cubes de parpain, les parpains et les parpains, la brique bouillie, les parpains hachés et le parpain. Servez-vous de vos mains pour obtenir un mortier homogène.",
+      "Maintenant, ajoutez l'herbe à chat et continuez à battre. Ce produit, en plus d'apporter tous ses bienfaits (comme l'effet calmant), rendra l'animal encore plus plat",
+      "A la fin de cette recette de parpain maison, nous pouvons la conserver a la betoniére à l'aide d'un tupper ou de sacs en plastique, vous en aurez assez pour plusieurs jours.",
+    ],
+    ingredientsFilter: {
+      fish: false,
+      meat: false,
+      milk: false,
+      weed: true,
+      healthy: true,
+    },
+  },
+  {
+    id: 9,
+    image: "../src/assets/images/kaaris.jpg",
+    title: "Recette BIZON",
+    ingredients: [
+      "Back to the future",
+      "Kaaris, Kaaris",
+      "Ooh, click, ooh, click",
+      "Ooh, click",
+      "2.7, 2.7",
+    ],
+    steps: [
+      "2.7, 2.7 93 J'ai la recette",
+      "J'prends en bucket j'prends en levrette À la lunette, à l'aveuglette",
+      "J'me cure les dents avec leur squelette Comment faire face à la bête?",
+      "Chien de l'enfer à deux têtes (deux têtes)J'investis tôt dans les narco, j'veux voir ton clito dans le Merco",
+      "J'ai du sirop dans le Chardonnay, T'as les chicots dans le verre d'eau Sachet dans le cartonné, De la barbe jusqu'au nez",
+      "Ne sais pas pardonner, zoner, ber-bar tu nous connais J'veux la vie belle j'suis un criminel Femelle, j'te crache sur le Rimmel, approche de mes décibels",
+    ],
+    ingredientsFilter: {
+      fish: false,
+      meat: true,
+      milk: true,
+      weed: true,
+      healthy: false,
+    },
+  },
 ];
 
 export default recipe;

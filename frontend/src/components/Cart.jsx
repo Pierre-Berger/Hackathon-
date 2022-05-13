@@ -5,7 +5,6 @@ import "../css/cart.css";
 export default function Cart({ catnipItems, cart, cartUpdater }) {
   const [isOpen, setisOpen] = useState(false);
   const itemsInCart = catnipItems.filter((e) => cart[e.id] > 0);
-  console.log(itemsInCart);
 
   let total = 0;
   for (let i = 0; i < catnipItems.length; i += 1) {
@@ -21,7 +20,7 @@ export default function Cart({ catnipItems, cart, cartUpdater }) {
           {itemsInCart.map((e) => (
             <div className="cart-content">
               <div className="article-cart">
-                <h3>Articles</h3>
+                <h3>Article</h3>
                 <div>{`${e.title}`}</div>
               </div>
               <div className="quantity-cart">
