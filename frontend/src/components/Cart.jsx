@@ -4,14 +4,20 @@ import "../css/cart.css";
 
 export default function Cart({ catnipItems, cart, updateCart, idItem }) {
   const [isOpen, setisOpen] = useState(false);
+
   const kaaris = catnipItems.find((item) => item.id === idItem.id);
+
   const handleClickMinus = () => {
     updateCart(cart - 1);
   };
   const handleClickPlus = () => {
     updateCart(cart + 1);
   };
-  console.log(kaaris);
+
+  // eslint-disable-next-line no-unused-vars
+  const [cartCount, setCartCount] = useState([{}]);
+
+  console.log(cartCount);
   return isOpen ? (
     <div className="cart-component">
       <CartBubble setisOpen={setisOpen} isOpen={isOpen} />
